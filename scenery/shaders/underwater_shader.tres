@@ -175,6 +175,7 @@ void fragment()
 "
 
 [sub_resource type="TextureArray" id=2]
+flags = 4
 data = {
 "depth": 0,
 "flags": 4,

@@ -1,6 +1,5 @@
 extends Spatial
 
-
 func _ready():
 	pass  # Replace with function body.
 
@@ -13,3 +12,6 @@ func _process(_delta):
 	if length > 5:
 		self.global_transform.origin = vehicle.global_transform.origin + distance * 5 / length
 	self.look_at(vehicle.global_transform.origin, Vector3.UP)
+	var image = vehicle.get_viewport().get_texture().get_data();
+	
+	#print(Globals.active_vehicle.transform.origin)
